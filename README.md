@@ -48,10 +48,26 @@ options:
 python dns_resolve.py -i hosts.txt -o results.json -f dig -s 8.8.8.8 
 ```
 
+the `hosts.txt` like
+```text
+a.com
+b.com
+c.com
+```
+
 2. Reverse DNS resolution:
+
 ```bash
 python dns_resolve.py -r -i ips.txt -o results.xml -f nslookup -s 8.8.8.8
 ```
+the `ips.txt` like
+
+```
+1.1.1.1
+2.2.2.2
+3.3.3.3
+```
+
 ## Output Formats
 
 - JSON format example:
@@ -105,7 +121,6 @@ openai.org: 192.0.66.2, 192.0.66.128
 
 ## Author
 
-- Author: [Your Name]
-- Email: [Your Email Address]
+just me.
 
-If you encounter any issues or have any suggestions while using the tool, feel free to contact the author.
+If you encounter any issues or have any suggestions while using the tool, feel free to contact me.
